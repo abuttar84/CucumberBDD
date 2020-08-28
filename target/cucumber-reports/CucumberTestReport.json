@@ -1,0 +1,119 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-08-23T13:03:56.670Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat utils.ConfigReader.readProperty(ConfigReader.java:22)\r\n\tat utils.Driver.getDriver(Driver.java:15)\r\n\tat step_definitions.Hooks.setUp(Hooks.java:19)\r\n",
+              "duration": 11000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.setUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Testing chase bank",
+        "description": "",
+        "id": "class-task;testing-chase-bank",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat utils.ConfigReader.readProperty(ConfigReader.java:22)\r\n\tat utils.Driver.getDriver(Driver.java:15)\r\n\tat utils.SeleniumUtils.waitForPageToLoad(SeleniumUtils.java:38)\r\n\tat utils.Screenshot.takeScreenshot(Screenshot.java:11)\r\n\tat step_definitions.Hooks.tearDown(Hooks.java:28)\r\n",
+              "duration": 13000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "I open \"chase bank\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"chase bank\"",
+                  "offset": 7
+                }
+              ],
+              "location": "step_definitions.ClassTaskSteps.iOpen(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "I verify title is \"Credit Card, Mortgage, Banking, Auto | Chase Online | Chase.comS\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Credit Card, Mortgage, Banking, Auto | Chase Online | Chase.comS\"",
+                  "offset": 18
+                }
+              ],
+              "location": "step_definitions.ClassTaskSteps.iVerifyTitleIs(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "I click \"ATM \u0026 branch\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ATM \u0026 branch\"",
+                  "offset": 8
+                }
+              ],
+              "location": "step_definitions.ClassTaskSteps.iClickButton(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@classTask"
+          },
+          {
+            "name": "@chase"
+          }
+        ]
+      }
+    ],
+    "name": "Class Task",
+    "description": "",
+    "id": "class-task",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ClassTasks.feature",
+    "tags": [
+      {
+        "name": "@classTask",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
